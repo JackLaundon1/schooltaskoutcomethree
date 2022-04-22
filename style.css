@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+}
+.logo{
+    float: left;
+    position: absolute;
+    margin-top:  130px;
+}
+
+h4{
+    text-align: right;
+    padding-right: 50px;
+    vertical-align: text-top;
+    font-size: 25px;
+    position: relative;
+    margin-top: -50px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+table{
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+    float: left;
+}
+
+table tr{
+    width: 100%;
+    display: inline-block;
+}
+table td{
+    width: 24.5%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+nav{
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+    float: left;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block; 
+    margin-right: 20px;
+    background-color: #000;
+}
+
+a{
+    text-decoration: none;
+    color: #555;
+    width: 25%;
+}
+
+a .subnav {
+    color: red;
+}
+
+p{
+    color: #555;
+}
+
+.subnav{
+    float: left;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    font-size: 16px;
+    color: #555;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* Dropdown content (hidden by default) */
+.subnav-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+/* Show the dropdown menu on hover */
+.subnav:hover .subnav-content {
+    display: block;
+  }
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: left;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.col-2{
+    padding-top: 100px;
+    text-align: left;
+}
+.col-2 img {
+    float: right;
+    padding-top: 10px;
+    max-width: 100%;
+
+}
+
+.btn{ 
+    display: inline-block;
+    background: #b7ff8a;
+    color: rgb(17, 17, 17);
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #82ecdb;
+}
+
+.header .row{
+    margin-top: 70px;
+    width: 100%;
+}
+.categories{
+    margin: 70px 0;
+}
+.col-3{
+    min-with: 250px;
+    margin: left;
+}
+.col-3 img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-4 img{
+    width: 100%;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    colour: #555;
+}
+.title::after{
+    content: "";
+    background: #acfa8c;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h4{
+    colour: #555;
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: 14px;
+}
+.rating .fa{
+    color: #fff800;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+/*----media query for menu----*/
+
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        bottom: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+/*--- all products ---*/
+
+.row-2{
+    margin: 100px auto 50px;
+    text-align: center;
+    padding-left: 100px;
+}
+select{
+    border: 1px solid #ff523b;
+    padding: 5px;
+    background-color: #82ecdb;
+    padding-right: -100px;
+
+}
+select:focus{
+    outline: none;
+}
+.sub-menu{
+    padding: 5px;
+}
+
+
+
+
+
+
+/*----media query for less than 600 screen size----*/
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+}
+
+/*----footer----*/
+
+.footer{
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #8a8a8a;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-3{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-4img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3{
+  flex-basis: 30%;
+}
+.footer-col-1, .footer-col-2{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+}
+
+/*---about us page---*/
+
+.About-Title{
+    text-align: center;
+    margin: 0 auto 80px;
+    margin-top: -100px;
+    margin-bottom: 160px;
+    position: relative;
+    line-height: 60px;
+    colour: #555;
+    font-size: ;
+}
+.about-para{
+    margin-top: -150px;
+    margin-bottom: -20px;
+}
+.opening-times{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 25px;
+    margin-bottom: 140px;
+}
+.opening-times p{
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.opening-times ul{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: -150px;
+}
+.opening-times-para p{
+    text-align: start;
+    margin-bottom: -170px;
+}
+
+.location{
+    align-items: center;
+}
+p{
+    padding-top: 30px;
+    line-break: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+.mapLocation{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    width: 50%;
+}
+.plantscentre {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+.zoocentre {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+.parkcentre {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+.walkscentre {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+

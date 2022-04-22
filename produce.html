@@ -1,0 +1,68 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-with, initial-scale=1.0">
+<title>Edinburgh-Carlisle Adventures</title>
+<link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="body-background">
+    <div class="header">
+        <div class="logo"></div>
+            <img src="images/logonobackground.png" width="150px">
+            <img src="" class="menu-icon" onclick="menutoggle()"> 
+            <h4>Edinburgh-Carlisle Adventures</h4>
+        </div>
+        
+    </div>
+        <div class="container">   
+            <div class="navbar">
+                <table>
+                    <tr>
+                        <td><a href="index.html">Home</a></td>
+                        <td><a href="open.html">Opening Times</a></td>
+                        <td><a href="location.html">Location</a></td>
+                    <td>
+                    <div class = "subnav">
+                        <a>Goods and Services</a>&nbsp;<i class = "fa fa-caret-down"></i>
+                        <div class = "subnav-content">
+                            <a href = "produce.html">Local Produce and Plants</a>
+                            <br>
+                            <a href = "zoo.html">Petting Zoo</a>
+                            <br>
+                            <a href = "park.html">Play Park</a>
+                            <br>
+                            <a href = "walks.html">Walks</a>
+                        </div>
+                    </div>
+                </td>
+                </tr>
+                </table>
+            </div>    
+        </div>
+        <div class = "plantscentre">
+            <img src = "images/plantscollage.png">
+        </div>
+
+    </div>   
+    <!--js for toggle menu-->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }  
+    </script>
+</div>
+</body>
+</html>
